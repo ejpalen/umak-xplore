@@ -1,0 +1,578 @@
+.dashboard-menu{
+    background-color: white;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+    width: 270px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.dashboard-menu .logo-container img{
+width: 200px;
+}
+
+.logo-container{
+    margin: 20px;
+}
+
+.dashboard-main-menu{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    margin-top: 40px;
+}
+
+
+.dashboard-menu a{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 1000ms;
+}
+
+.dashboard-menu a svg{
+    margin: 0;
+    margin-right: 10px;
+    fill: #010068 !important;
+}
+
+.dashboard-menu a:hover{
+    background-color: #010068;
+    color: white;
+    transform: translateY(-2px);
+        transition: transform 250ms;
+}
+
+.dashboard-menu a:hover svg{
+    fill: #FEDF60 !important;
+}
+
+.dashboard-menu a.active{
+    background-color: #010068;
+    color: white;
+}
+
+.dashboard-menu a.active svg{
+    fill: #FEDF60 !important;
+}
+
+.log-out-container{
+    margin: 20px;
+}
+
+.dashboard-content{
+    background: rgb(234,244,255);
+background: linear-gradient(45deg, rgba(234,244,255,1) 0%, rgba(234,225,241,1) 100%);
+    width: -webkit-fill-available;
+    left: 270px;
+    position: absolute;
+    padding: 40px;
+}
+
+.dashboard-content h2{
+    font-weight: 500;
+}
+
+.dashboard-content h3{
+    font-weight: normal;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.summary-container{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.summary{
+    background-color: white;
+    padding: 40px 20px 20px;
+    flex-grow: 1;
+    border-radius: 10px;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.summary img{
+    height: 40px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.total-users-container{
+    margin-top: 60px;
+}
+
+.total-users-container h2{
+    margin-bottom: 10px;
+}
+
+
+.report-wrapper{
+    margin-top: 60px;
+}
+
+.report-wrapper h2{
+    margin-bottom: 20px;
+}
+
+.report-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.report-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.report{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    gap: 20px;
+}
+
+.report:hover{
+    background-color: #f2f2f2;
+}
+
+
+.dashboard-content table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+.dashboard-content td, .dashboard-content th{
+    border-top: 2px solid #f2f2f2;   
+    text-align: left;
+    padding: 10px;
+}
+
+.dashboard-content td{
+    font-size: 12px;
+}
+
+.dashboard-content th{
+    border-top: none;
+    font-size: 14px;
+}
+
+.dashboard-content tr:hover{
+    background-color: #f2f2f2;
+}
+
+.dashboard-content tr:hover a svg{
+    background-color: white;
+}
+
+.users-table-wrapper{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-content tr#user-table-header:hover{
+background-color: white !important;
+}
+
+#action-header{
+    width: 100px;
+}
+
+.action-container{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.users-table-wrapper a svg{
+background-color: #f2f2f2;
+padding: 10px;
+border-radius: 10px;
+}
+
+.users-table-wrapper a.user-action-delete{
+margin-left: 10px;
+}
+
+.users-table-wrapper a.user-action-edit:hover svg{
+    background-color: #010068;
+    fill: white !important;
+}
+
+.users-table-wrapper a.user-action-delete:hover svg{
+    background-color: #CB2F30;
+    fill: white !important;
+}
+
+a.user-action-respond{
+    background-color: #CB2F30;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.users-filter-wrapper{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.dashboard-content input, .dashboard-content select {
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+    font-size: 16px;
+}
+
+.dashboard-content input:focus,
+.dashboard-content input:active,
+.dashboard-content select:focus,
+.dashboard-content select:active {
+    border: none;
+    outline: none;
+}
+
+.dashboard-content input{
+    flex-grow: 2;
+}
+
+.dashboard-content select:hover{
+    cursor: pointer;
+}
+
+.dashboard-content input#users-filter-search{
+    flex-grow: 0.5; 
+}
+
+.dashboard-content input#users-filter-search:hover{
+    cursor:pointer;
+    background-color: #010068;
+    color: white;
+}
+
+.dashboard-umakDiscoveriesWrapper h3{
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.dashboard-building-wrapper{
+margin-top: 20px;
+}
+
+#discoveriesOptions, #safetyCenterOptions {
+    margin-top: 20px;
+}
+
+.form-label-input-container{
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-form h1{
+margin-bottom: 40px;
+}
+
+.dashboard-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-form .form-label-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dashboard-form .form-label-input-wrapper p{
+    margin-bottom: 5px;
+}
+
+.dashboard-form textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dashboard-form input[type="submit"]{
+    width: max-content;
+    padding: 10px 20px;
+    background-color: #010068;
+    color: white;
+    cursor: pointer;
+}
+
+.add-option a{
+    display: flex;
+    background-color: white;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 0 10px;
+    width: fit-content;
+}
+
+.add-option a:hover{
+    background-color: #010068;
+    color: white;
+}
+
+
+/*MEDIA QUERRIESSS*/
+
+@media only screen and (max-width: 1100px){
+    .dashboard-content td, .dashboard-content th{
+        font-size: 14px;
+      }
+}
+
+@media only screen and (max-width: 1000px){
+    .dashboard-menu{
+        width: 80px;
+    }
+    
+    .dashboard-menu .logo-container img{
+        width: 100%;
+    }
+    .dashboard-menu a{
+        width: fit-content;
+    }
+
+    .dashboard-menu a p{
+        display: none;
+    }
+
+    .dashboard-menu a svg{
+        margin-right: 0;
+    }
+
+    .dashboard-main-menu h3{
+        display: none;
+    }
+
+    .dashboard-main-menu{
+        align-items: center;
+    }
+
+    .dashboard-content{
+        left: 80px;
+    }
+
+    .logo-container{
+        margin: 20px 10px 10px;
+    }
+}
+
+.device-restricted{
+    display: none;
+}
+
+.dashboard-building-wrapper img{
+    width: 50px;
+    margin: auto;
+    display: flex;
+}
+
+@media only screen and (max-width: 850px){
+    .dashboard-content{
+        display: none;
+    }
+    .device-restricted{
+        background: linear-gradient(45deg, rgba(234,244,255,1) 0%, rgba(234,225,241,1) 100%);
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .device-restricted h1{
+        margin-left: 80px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .device-restricted h1{
+        font-size: 20px;
+    }   
+}
+
+
+
+/* Calendar */
+
+.wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #9B59B6;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+  
+  
+  .slider {
+      width: 100%;
+      margin-top: 10px;
+      height: 300px;
+      position: relative;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+    
+    .slider-content {
+      padding: 10px;
+      display: none;
+    }
+    
+    .slider-content h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    
+    .slider-content label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    .slider-content input,
+    .slider-content textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+    }
+    
+    .slider-content button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      margin-top: 10px;
+    }
+    
+    .slider-content button:hover {
+      background-color: #0062cc;
+    }
+    

@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container-top-absolute{
+    width: 100%;
+    height:400px;
+    top: 0;
+    position: absolute;
+    background-color: #F2F2F2;
+    background-image: url("../media/safetyHubBg.png");
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.safety-center-container{
+    z-index: 1;
+    position: relative;
+    margin: 180px auto 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.safetyCenterContainer{
+  background-color: #F2F2F2;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.safetyCenterContainer.loaded {
+  opacity: 1;
+}
+
+.safety-center-container-header{
+  margin: auto 100px;
+}
+
+.safety-center-container-header h1{
+  font-size: 60px;
+}
+
+.safety-center-container-main-buttons {
+  margin: auto 100px;
+    margin-top: 40px;
+    display: flex;
+    grid-gap: 10px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+
+  .safety-center-container-main-button{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    flex: 1;
+    right: 0;
+    visibility: visible;
+    max-height: max-content;
+    max-width: 100%;
+}
+
+  .safety-center-container-main-button h2{
+    color: black;
+    visibility: visible;
+  }
+
+  .safety-center-container-main-button button{
+    margin-top: 20px;
+    width: fit-content;
+    padding: 8px 20px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #CB2F30;
+    color: white;
+    visibility: visible;
+    transition: all 0.5s ease-out;
+  }
+
+  .report-emergencies{
+    background-color: #CB2F30;
+    color: white;
+  }
+
+  .report-emergencies h2{
+    color: white;
+  }
+
+  .report-emergencies button{
+    background-color: white;
+    color: #CB2F30;
+    transition: transform 1000ms;
+  }
+
+  button:hover{
+    transform: translateY(-2px);
+    transition: transform 250ms;
+    cursor: pointer;
+  }
+
+  .guidelines-wrapper a{
+    background-color: #CB2F30;
+    position: relative;
+    transition: transform 1000ms;
+  }
+
+
+  .report-emergencies-action-buttons{
+    display: none;
+  }
+
+  .safety-center-container-main-buttons .expand-report-div .report-emergencies-action-buttons{
+    display: flex;
+  }
+
+
+  .report-emergencies-action-buttons button{
+    display: flex;
+    align-items: center;
+    background-color: #CB2F30;
+  }
+
+  .report-emergencies-action-buttons button p{
+    color: white;
+  }
+
+  .report-emergencies-action-buttons button svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    fill: white !important;
+  }
+
+  #form-action-button{
+    margin-left: 5px;
+    background-color: white;
+    border: 1px solid #CB2F30;
+  }
+
+  #form-action-button p{
+    color: #CB2F30;
+  }
+
+  #form-action-button svg{
+    fill: #CB2F30 !important;
+  }
+
+  .form-wrapper{
+    overflow: hidden;
+    margin-top: 20px;
+    display: none;
+  }
+
+  .safety-center-container-main-buttons .expand-report-div .form-wrapper{
+    display: block;
+  }
+
+.safety-center-container-main-buttons form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    position: relative;
+    top: -100%;
+    max-height: 0;
+}
+
+.safety-center-container-main-buttons form.action-expanded{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.2s ease-out;
+    top: 0;
+    max-height: 100%;
+}
+
+.form-label-input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.form-label-input-container{
+    display: flex;
+}
+
+.form-label-input-wrapper{
+    display: block;
+    margin-top: 20px;
+}
+
+.form-label-input-wrapper p{
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.safety-center-container-main-buttons form label{
+    margin-bottom: 5px;
+    color: black;
+}
+
+.safety-center-container-main-buttons form select{
+    padding: 8px 16px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.safety-center-container-main-buttons form input{
+    padding: 8px 16px;
+    width: fit-content;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.safety-center-container-main-buttons form textarea{
+    width: 100%;
+    background-color: #F2F2F2;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.safety-center-container-main-buttons form input[type="submit"] {
+    margin-top: 20px;
+    color: white;
+    background-color: #CB2F30;
+}
+
+
+
+  .safety-center-container-main-buttons .remove-report-div h2, .safety-center-container-main-buttons .remove-report-div button{
+    visibility: hidden;
+  }
+
+
+  .safety-center-container-main-buttons .remove-report-div{
+    transition: all 0.2s ease-out;
+    max-height: -webkit-fill-available;
+    position: absolute;
+    right: -50%;
+    width: 50%;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  .safety-center-container-main-buttons .remove-report-div button{
+    display: none;
+  }
+
+.safety-center-container-main-buttons .expand-report-div{
+    background-color: white;
+    animation: report-expand 0.5s forwards;
+    padding-top: 20px;
+  }
+
+  .safety-center-container-main-buttons .expand-report-div #report-emergency-button{
+    display: none;
+  }
+
+  .safety-center-container-main-buttons .expand-report-div h2{
+    color: black;
+  }
+
+
+  @keyframes report-expand {
+    0% {
+        max-width: 50%;
+    }
+
+    100% {
+        max-width: 100%;
+    }
+}
+
+.guidelines-wrapper{
+    padding: 80px 100px;
+    background: white;
+}
+
+.guidelines-wrapper p{
+    margin: 20px 0;
+}
+
+.guidelines-wrapper h2{
+  font-size: 40px;
+}
+
+.safetyCenterContainer a{
+    text-decoration: none;
+    background-color: #CB2F30;
+    padding: 8px 16px;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+.MainSection3{
+    margin-top: 80px;
+}
+
+.MainSection3 h2{
+    margin-bottom: 20px;
+}
+
+.MainSection3 .a-container{
+    margin-top: 20px;
+}
+
+.safety-center-container .MainSection3 a{
+    border: 1px solid white;
+    background: none;
+}
+
+.safety-center-container .MainSection3 a:hover{
+background: white;  
+color: #010068;
+}
+
+.remove-content{
+    display: none;
+}
+
+.report-back-button{
+    padding: 5px;
+    width: fit-content;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.safety-center-container-main-buttons .expand-report-div .report-back-button{
+    display: block;
+    color: black;
+}
+
+.report-incidents.expand-report-div #report-incident-btn{
+  display: none;
+}
+
+.report-incidents.expand-report-div  form{
+  top: 0 !important;  
+  max-height: max-content !important;
+}
+
+.safety-center-container .MainSection4 a{
+  border: 1px solid #010068;
+  background: none;
+  color: #010068;
+}
+
+.safety-center-container .MainSection4 a:hover{
+  background: #010068;
+  color: white;
+}
+
+.safety-center-container .MainSection4 a:hover svg{
+  fill: white !important;
+}
+
+@media only screen and (max-width: 700px){
+  .safety-center-container-header h1{
+    font-size: 40px;
+  }
+  .safety-center-container-main-button{
+    padding: 20px;
+  }
+
+  .safety-center-container-main-buttons{
+    margin: auto 40px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .safety-center-container-header{
+    margin: auto 40px;
+  }
+
+  .guidelines-wrapper{
+    padding: 40px;
+  }
+}

@@ -1,0 +1,189 @@
+.Mainsection1 {
+    height: 100vh;
+    background-image: url("../../media/MainSec1bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.Mainsection1Content1 {
+    padding: 0 180px 0 180px;
+    margin-top: 60px !important;
+}
+.notifContainer {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+
+.MainSection2 {
+    align-items: center;
+    padding: 80px 100px;
+    display: block;
+}
+.Mainsection2Content1 {
+    margin: auto;
+    width: 100%;
+}
+
+.Mainsection2Content1 .flex{
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.quickAccesCont {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+
+.quickAccesCont img{
+    height: 50px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.quickAccesImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.quickAccessOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgba(254, 235, 154, .7), rgba(53, 51, 255, .7));
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.quickAccessOverlay div{
+    padding: 20px;
+}
+
+.quickAccessOverlay p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.quickAccessOverlay i {
+    font-size: 40px;
+    color: #010068;
+}
+
+.MainSection3 {
+    padding: 80px 100px ;
+    align-items: center;
+    color: white;
+}
+
+.MainSection3-h1{
+    margin-bottom: 20px;
+}
+
+.MainSection3 img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.MainSection4 {
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../media/MainSec4bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+}
+
+.MainSection4-h1{
+    margin-bottom: 20px;
+}
+
+.EventsContainer {
+    width: 90%;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+    padding: 50px;
+}
+
+.MainSection4 svg{
+    margin: 0;
+    height: 10px;
+    width: 10px;
+    margin-top: 8px;
+    fill: #010068 !important;
+}
+
+.MainSection5 {
+    padding: 80px 100px;
+}
+
+.RecAreas{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.RecomendedAreasCont {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    background: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+.RecAreaPic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.RecAreaPicOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000, rgba(255, 255, 255, .9));
+    display: flex;
+    align-items: end;
+}
+
+.RecAreaPicOverlay .txt-m1 {
+    font-weight: bold;
+}
+
+.RecAreaTxt {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
+    white-space: normal; /* let the text wrap preserving spaces */
+}
+.urAllCUp {
+    margin-top: 50px;
+    height: 200px;
+    border-radius: 150px;
+    background-image: url("../../media/adminBldgTopOnly.png");
+    background-position: center;
+    background-size: cover;
+}

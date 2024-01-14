@@ -1,0 +1,102 @@
+.VerseMainCOnt {
+    width: 93%;
+    margin: 100px auto 0 auto;
+    position: relative;
+}
+
+.Verse-leftCont,
+.Verse-rightCont {
+    width: 24.5%;
+    height: 50vh;
+    top: 100px;
+    position: sticky;
+}
+
+.Verse-centerCont {
+    width: 48%;
+    overflow-x: hidden;
+}
+
+.VerseLeftContainer1,
+.VerseLeftContainer2,
+.VerseRightContainer1 {
+    height: 350px;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.VerseLeftContainer2 {
+    height: 400px;
+    padding: 20px;
+}
+
+.VerseRightContainer1 {
+    height: AUTO;
+    padding: 20px;
+}
+
+.VerseCenterMoment {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.VerseCenterMoment::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.VerseCenterMoment {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.momentsCard {
+    flex: 0 0 auto;
+    height: 250px;
+    width: 20%;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 8px;
+    overflow: hidden;
+}
+
+.VerseCenterCreatePost {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.VLC1-PFP {
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    background: #f2f2f2;
+    border: 1.5px solid #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*PROFILE*/
+.UVP-PFP {
+    width: 250px;
+    height: 250px;
+    background: aliceblue;
+    position: absolute;
+    top: -130px;
+}
+
+.UVP-NameCont {
+    margin: 110px 0 0 0;
+}
+
+.UVP-ContentLeftCont {
+    width: 60%;
+}

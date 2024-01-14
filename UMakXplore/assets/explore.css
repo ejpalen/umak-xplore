@@ -1,0 +1,66 @@
+.exploreContainer{
+    background-color: #F0F2F5;
+}
+
+.exploreContainer .safety-center-container-header{
+    margin: auto 200px;
+}
+
+
+.exploreContainer .dropdown-button{
+    width: fit-content;
+    margin: 10px 0;
+}
+
+.exploreContainer .guidelines-wrapper{
+    background-color: aqua;
+    margin: 20px;
+}
+
+.post-wrapper{
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+
+.post-wrapper a{
+    background: none;
+    color: black;
+    display: block;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.post-wrapper a:hover{
+    color: #808080;
+}
+
+.caught-up{
+    text-align: center;
+    margin: 20px auto 40px;
+    color: #808080;
+}
+
+.exploreContainer .custom-dropdown p{
+    margin-right: 10px;
+}
+
+.post-wrapper h3{
+    font-weight: 400;
+    color: #4D4D4D;
+    letter-spacing: 5px;
+}
+
+
+@media only screen and (max-width: 700px){
+    .post-wrapper{
+        margin: 20px 40px;
+    }
+}
+

@@ -1,0 +1,170 @@
+.calendar-wrapper{
+    background: rgb(234,244,255);
+background: linear-gradient(45deg, rgba(234,244,255,1) 0%, rgba(234,225,241,1) 100%);
+height: 100vh;
+display: flex;
+width: auto;
+flex-direction: column;
+justify-content: center;
+}
+
+.calendar-container{
+    display: flex;
+    gap: 20px;
+    margin: 0 50px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+  }
+  
+  .calendar-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  
+  .calendar-days {
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .calendar-date {
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+  }
+
+  .calendar-date p{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calendar-date {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .calendar-date p:hover{
+    background-color: #010068;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+  }
+
+  .date-active p{
+    background-color: #010068;
+    color: white;
+  }
+
+  .date-active.calendar-date.with-event p::after{
+    background-color: white;
+  }
+
+  .calendar-date.with-event:hover p::after{
+    background-color: white;
+  }
+
+  .calendar-date.with-event p::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #010068;
+    border-radius: 50%;
+  }
+
+  .calendar-arrow svg{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+  }
+
+  .calendar-arrow svg:hover{
+    background-color: #010068;
+    fill: white !important;
+  }
+
+  svg.calendar-arrow-prev {
+    rotate: 180deg;
+  }
+
+  .calendar-events{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 2;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.04);
+  }
+
+  .calendar-events-header {
+    margin-bottom: 10px;
+  }
+
+  .event{
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .event a{
+    background-color: #010068;
+    padding: 10px 20px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+
+  @media only screen and (max-width: 1000px){
+    .calendar-container{
+      flex-direction: column;
+    } 
+
+    .calendar-wrapper{
+      height: auto;
+      padding: 100px 0 40px;
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    .calendar-date p{
+      width: 20px;
+      height: 20px;
+    }
+
+    .calendar-container{
+      margin: 0 20px;
+    }
+  }
